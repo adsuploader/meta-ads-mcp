@@ -169,15 +169,14 @@ Previews report the effective sponsors per ad and check partnership authorizatio
 
 ## Example prompts
 
-- *"List my ad accounts, then show the active campaigns in the Purchase account."*
-- *"Use ad 120210… as a template. Swap in these three videos and this headline and primary text, and create paused ads in a new ad set."*
+- *"Using any ad from my Sales ad set as the template, launch these 100 creatives — and write a unique headline and primary text for each."*
+- *"Take my best-performing sales ad and build 20 variations with different primary-text hooks, all paused in a new ad set."*
 - *"Assemble a saved build from these creatives and copy, then give me the link to review and launch it in the Ads Uploader web app."*
-- *"Preview what would be created from my saved build 'Q4 Prospecting' before anything goes live."*
 - *"Duplicate the ad behind this Facebook post into my Retargeting ad set so the likes and comments carry over."*
 - *"Import this Instagram creator post as a partnership ad with our brand as the sponsor, and preview the sponsors before creating."*
-- *"Upload the creatives in this Google Drive folder to my ad account, then list the batch."*
+- *"Upload the creatives in this Google Drive folder, then build ads from them in a new ad set with a unique hook per product."*
+- *"Preview what would be created from my saved build 'Q4 Prospecting' before anything goes live."*
 - *"Search interest targeting for 'home fitness' and add the top matches to my build."*
-- *"Check the status of my last ad-creation job."*
 
 ## How it works
 
