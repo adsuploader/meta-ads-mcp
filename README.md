@@ -18,6 +18,8 @@
 Ads Uploader takes an existing ad you already run, turns its settings into a reusable template, and builds brand-new ads on top of it — new media, copy, CTA, and targeting — in bulk. It also duplicates existing ads by post so social proof is preserved. Point your AI agent at it and describe the ads you want.
 
 > **Safe by default.** Previews resolve posts and check Meta permissions *without creating anything*, and created ads are **paused** unless you explicitly say otherwise. Nothing spends money until you unpause it in Meta.
+>
+> **Agent-assisted vs fully agentic.** For agent-assisted launches, we recommend having your agent assemble a **saved build** rather than creating ads headlessly — the build is accessible, editable, and launchable from the Ads Uploader web app, so you keep a human review-and-launch step in the polished UI.
 
 ## What it does
 
