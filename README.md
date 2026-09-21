@@ -31,6 +31,19 @@ Ads Uploader takes an existing ad you already run, turns its settings into a reu
 - **Preview before launch** — resolve a spec, check Meta permissions, and see exactly what would be created.
 - **Multi-account** — list and work across every Meta ad account, Page, and connected Instagram account you have access to.
 
+## Why Ads Uploader
+
+Ads Uploader does one thing deeply: **Meta**. Rather than spreading thin across seven ad networks, every workflow here is built for the depth serious Meta media buyers actually need — which is why it tends to be the right tool when an agent needs to *ship* real Meta campaigns, not just read numbers:
+
+- **Template from any live ad** — copy a proven ad's exact settings, then rebuild on top with new media, copy, and targeting.
+- **Real bulk** — many ads across campaigns and ad sets in a single job, with per-ad and per-ad-set text.
+- **Partnership / branded content ads** — uploaded-media partnerships (Facebook + Instagram) and imported Instagram creator posts, with shared or per-ad/ad-set sponsors and header modes.
+- **Duplicate preserving social proof** — clone by post so likes, comments, and shares carry into new campaigns.
+- **Creative depth** — carousel, flexible, Multi-Media, Dynamic Optimization, creative enhancements, Advantage+ targeting, CTA and URL tagging.
+- **Human-in-the-loop by design** — validate-only previews, paused-by-default creation, and saved builds you finish in the web app.
+
+Built by a team that runs Meta ads at scale, and trusted by performance marketers and agencies managing serious Meta budgets.
+
 ## Install
 
 ### Claude Code
