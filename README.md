@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="assets/cover.png" alt="Ads Uploader — Meta Ads MCP" width="100%">
+  <img src="assets/meta-ads-mcp.png" alt="Meta Ads MCP by Ads Uploader" width="100%">
 </p>
 
 <h1 align="center">Ads Uploader — Meta Ads MCP</h1>
 
-<p align="center">The <strong>Meta Ads MCP</strong> server — launch and manage Meta (Facebook &amp; Instagram) ads from Claude, ChatGPT, Claude Code, Cursor, and Codex.</p>
+<p align="center">The <strong>Meta Ads MCP</strong> server by Ads Uploader helps you launch and manage Meta (Facebook &amp; Instagram) ads from Claude, ChatGPT, Cursor, and Codex.</p>
 
 <p align="center">
   <a href="https://adsuploader.com"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
