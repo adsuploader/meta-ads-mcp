@@ -156,6 +156,7 @@ Previews report the effective sponsors per ad and check partnership authorizatio
 
 - *"List my ad accounts, then show the active campaigns in the Purchase account."*
 - *"Use ad 120210… as a template. Swap in these three videos and this headline and primary text, and create paused ads in a new ad set."*
+- *"Assemble a saved build from these creatives and copy, then give me the link to review and launch it in the Ads Uploader web app."*
 - *"Preview what would be created from my saved build 'Q4 Prospecting' before anything goes live."*
 - *"Duplicate the ad behind this Facebook post into my Retargeting ad set so the likes and comments carry over."*
 - *"Import this Instagram creator post as a partnership ad with our brand as the sponsor, and preview the sponsors before creating."*
@@ -167,6 +168,7 @@ Previews report the effective sponsors per ad and check partnership authorizatio
 
 - **Draft / preview first.** `ads_preview` resolves posts, media, and permissions using read and validate-only calls — it never creates ads or stores codes.
 - **Paused by default.** `ads_create` builds ads in the paused state unless you explicitly set them live, so nothing spends until you unpause in Meta.
+- **Hand off to the web app.** Instead of launching headlessly, the agent can assemble a **saved build** and hand you a link — it hydrates in the Ads Uploader web uploader (an open tab picks it up automatically) so you review and launch from the full UI.
 - **Long jobs stay responsive.** The hosted server returns `still_running` with a `jobId` after ~60s so tool calls stay under proxy deadlines; resume with `ads_get_job`.
 - **OAuth, not tokens.** The hosted server authenticates with OAuth 2.1 (PKCE) in your browser.
 
