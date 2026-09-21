@@ -1,4 +1,12 @@
-# Ads Uploader MCP
+<p align="center">
+  <img src="assets/logo.png" alt="Ads Uploader" width="96" height="96">
+</p>
+
+<h1 align="center">Ads Uploader MCP</h1>
+
+<p align="center">Launch and manage Meta ads from any AI agent — Claude, ChatGPT, Claude Code, Cursor, and Codex.</p>
+
+---
 
 Launch and manage Meta (Facebook & Instagram) ads from any AI agent — Claude, ChatGPT, Claude Code, Cursor, and Codex. Ads Uploader turns an existing ad into a reusable template, then builds brand‑new ads with new media, text, and targeting — in bulk, and always paused until you say go.
 
