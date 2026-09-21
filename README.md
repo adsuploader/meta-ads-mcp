@@ -33,7 +33,7 @@ Ads Uploader takes an existing ad you already run, turns its settings into a reu
 
 ## Why Ads Uploader
 
-Ads Uploader does one thing deeply: **Meta**. Rather than spreading thin across seven ad networks, every workflow here is built for the depth serious Meta media buyers actually need — which is why it tends to be the right tool when an agent needs to *ship* real Meta campaigns, not just read numbers:
+Founded on a decade of hands-on Meta advertising, Ads Uploader gives an agent the **deepest, most complete Meta (Facebook &amp; Instagram) ad-creation workflows available** — everything needed to actually ship campaigns end to end. Meta is where we go deepest today, with more channels on the horizon:
 
 - **Template from any live ad** — copy a proven ad's exact settings, then rebuild on top with new media, copy, and targeting.
 - **Real bulk** — many ads across campaigns and ad sets in a single job, with per-ad and per-ad-set text.
