@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Ads Uploader" width="96" height="96">
+  <img src="assets/cover.png" alt="Ads Uploader — Meta Ads MCP" width="100%">
 </p>
 
-<h1 align="center">Ads Uploader MCP</h1>
+<h1 align="center">Ads Uploader — Meta Ads MCP</h1>
 
-<p align="center">Launch and manage Meta (Facebook &amp; Instagram) ads from any AI agent — Claude, ChatGPT, Claude Code, Cursor, and Codex.</p>
+<p align="center">The <strong>Meta Ads MCP</strong> server — launch and manage Meta (Facebook &amp; Instagram) ads from Claude, ChatGPT, Claude Code, Cursor, and Codex.</p>
 
 <p align="center">
   <a href="https://adsuploader.com"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
   <img alt="Model Context Protocol" src="https://img.shields.io/badge/Model_Context_Protocol-server-1a3a5c">
   <img alt="Meta Ads" src="https://img.shields.io/badge/Meta-Facebook_%26_Instagram-1a3a5c">
-  <a href="https://github.com/adsuploader/mcp/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/adsuploader/mcp?style=flat&color=1a3a5c"></a>
+  <a href="https://github.com/adsuploader/meta-ads-mcp/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/adsuploader/meta-ads-mcp?style=flat&color=1a3a5c"></a>
 </p>
 
 ---
