@@ -24,6 +24,7 @@ Ads Uploader takes an existing ad you already run, turns its settings into a reu
 - **Build ads from a template** — copy settings from any existing ad, then swap in new media, text, CTA, links, and targeting.
 - **Bulk creation** — many ads across campaigns and ad sets in one job, with per-ad text and creative options.
 - **Duplicate by post** — clone existing ads by Page post ID so the original post's likes, comments, and shares carry into new campaigns.
+- **Partnership (branded content) ads** — run ads as a partnership with a creator or brand, from your own uploaded media or an imported Instagram post, with shared or per-ad/ad-set sponsors. *(See below.)*
 - **Media pipeline** — import creatives from public URLs, a Google Drive folder, or local files.
 - **Preview before launch** — resolve a spec, check Meta permissions, and see exactly what would be created.
 - **Multi-account** — list and work across every Meta ad account, Page, and connected Instagram account you have access to.
@@ -133,8 +134,8 @@ Every tool carries a display title and read-only / destructive hints so your hos
 
 | Tool | What it does |
 | --- | --- |
-| `ads_create` | Create ads from a full AdSpec or saved build — **paused by default** |
-| `ads_preview` | Resolve a spec and check Meta permissions without creating anything |
+| `ads_create` | Create ads from a full AdSpec or saved build, incl. partnership ads — **paused by default** |
+| `ads_preview` | Resolve a spec, check Meta permissions and partnership sponsors, without creating anything |
 | `ads_duplicate_by_post` | Duplicate ads by Page post ID, preserving social proof |
 | `ads_duplicate_by_post_preview` | Preview a post-ID duplication |
 | `ads_get_job` / `ads_get_duplication` | Poll or resume a running job |
@@ -142,12 +143,22 @@ Every tool carries a display title and read-only / destructive hints so your hos
 
 See [`SKILL.md`](./SKILL.md) for the full per-parameter reference agents should follow.
 
+## Partnership (branded content) ads
+
+`ads_create` and `ads_preview` support partnership ads two ways:
+
+- **Your own uploaded media**, as a partnership on Facebook or Instagram — choose a partner (the Second Identity) by Page and/or Instagram account, apply it across the whole launch or per ad / ad set, and pick the header mode (both identities, partner-only, or dynamic). An Instagram-only partner is supported.
+- **Import an existing Instagram creator post** by URL, shortcode, source ID, or ad code, and set the sponsor and text per ad, per ad set, or shared.
+
+Previews report the effective sponsors per ad and check partnership authorization for the First Identity *before* anything is created. Facebook post imports, mixed post/upload batches, and Threads on imported posts are not supported.
+
 ## Example prompts
 
 - *"List my ad accounts, then show the active campaigns in the Purchase account."*
 - *"Use ad 120210… as a template. Swap in these three videos and this headline and primary text, and create paused ads in a new ad set."*
 - *"Preview what would be created from my saved build 'Q4 Prospecting' before anything goes live."*
 - *"Duplicate the ad behind this Facebook post into my Retargeting ad set so the likes and comments carry over."*
+- *"Import this Instagram creator post as a partnership ad with our brand as the sponsor, and preview the sponsors before creating."*
 - *"Upload the creatives in this Google Drive folder to my ad account, then list the batch."*
 - *"Search interest targeting for 'home fitness' and add the top matches to my build."*
 - *"Check the status of my last ad-creation job."*
