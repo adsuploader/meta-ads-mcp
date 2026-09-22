@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ads-uploader": {
+      "url": "https://adsuploader.com/api/mcp"
+    }
+  }
+}

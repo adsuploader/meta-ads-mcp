@@ -17,9 +17,9 @@
 
 Ads Uploader takes an existing ad you already run, turns its settings into a reusable template, and builds brand-new ads on top of it — new media, copy, CTA, and targeting — in bulk. It also duplicates existing ads by post so social proof is preserved. Point your AI agent at it and describe the ads you want.
 
-> **Safe by default.** Previews resolve posts and check Meta permissions *without creating anything*, and created ads are **paused** unless you explicitly say otherwise. Nothing spends money until you unpause it in Meta.
->
 > **Agent-assisted vs fully agentic.** For agent-assisted launches, we recommend having your agent assemble a **saved build** rather than creating ads headlessly — the build is accessible, editable, and launchable from the Ads Uploader web app, so you keep a human review-and-launch step in the polished UI.
+
+Requires an existing paid Ads Uploader account with MCP access and a connected Meta account with the necessary permissions. MCP access is not included in trials.
 
 ## What it does
 
@@ -66,6 +66,10 @@ Settings → **Connectors** (custom MCP) → add the server URL `https://adsuplo
 
 ### Cursor
 
+[Add Ads Uploader to Cursor](https://cursor.com/install-mcp?name=ads-uploader&config=eyJ1cmwiOiJodHRwczovL2Fkc3VwbG9hZGVyLmNvbS9hcGkvbWNwIn0%3D)
+
+This repository includes an Agent Plugins `plugin.json` and `mcp.json`, plus a `.mcp.json` compatibility file for directory discovery. The plugin connects to the hosted server; authentication happens in your browser.
+
 Add to `~/.cursor/mcp.json` (or a project `.cursor/mcp.json`):
 
 ```json
@@ -77,6 +81,12 @@ Add to `~/.cursor/mcp.json` (or a project `.cursor/mcp.json`):
   }
 }
 ```
+
+After adding the server, complete the Ads Uploader sign-in and consent prompt. Ask the agent to list your ad accounts to check the connection.
+
+### Grok
+
+Open [Grok Connectors](https://grok.com/connectors), choose **New Connector → Custom**, and enter `https://adsuploader.com/api/mcp`. Follow the authentication prompt. See the [Grok connection guide](docs/connect-grok.md) for prerequisites and example prompts; this host connection is awaiting an end-to-end test.
 
 ### Codex
 
@@ -181,7 +191,6 @@ Previews report the effective sponsors per ad and check partnership authorizatio
 ## How it works
 
 - **Draft / preview first.** `ads_preview` resolves posts, media, and permissions using read and validate-only calls — it never creates ads or stores codes.
-- **Paused by default.** `ads_create` builds ads in the paused state unless you explicitly set them live, so nothing spends until you unpause in Meta.
 - **Hand off to the web app.** Instead of launching headlessly, the agent can assemble a **saved build** and hand you a link — it hydrates in the Ads Uploader web uploader (an open tab picks it up automatically) so you review and launch from the full UI.
 - **Long jobs stay responsive.** The hosted server returns `still_running` with a `jobId` after ~60s so tool calls stay under proxy deadlines; resume with `ads_get_job`.
 - **OAuth, not tokens.** The hosted server authenticates with OAuth 2.1 (PKCE) in your browser.

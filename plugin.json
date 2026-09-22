@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ads-uploader",
+  "version": "1.0.0",
+  "description": "Launch more Meta ads with less busywork. Import creatives, edit saved builds, preview campaigns, and bulk-create Facebook and Instagram ads.",
+  "author": {
+    "name": "Pingzu Digital LLC",
+    "email": "support@adsuploader.com",
+    "url": "https://adsuploader.com"
+  },
+  "homepage": "https://adsuploader.com/docs/ad-configuration/mcp",
+  "repository": "https://github.com/adsuploader/meta-ads-mcp",
+  "license": "UNLICENSED",
+  "keywords": ["meta-ads", "facebook-ads", "instagram-ads", "marketing", "advertising", "bulk-upload", "mcp"]
+}
