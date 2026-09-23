@@ -21,6 +21,8 @@ Ads Uploader takes an existing ad you already run, turns its settings into a reu
 
 Requires an existing paid Ads Uploader account with MCP access and a connected Meta account with the necessary permissions. MCP access is not included in trials.
 
+This repository contains public documentation and connector configuration. Ads Uploader is a proprietary product; its application, backend and MCP server implementation are not included here. See [License](#license) for the scope of reuse permissions.
+
 ## What it does
 
 - **Build ads from a template** — copy settings from any existing ad, then swap in new media, text, CTA, links, and targeting.
@@ -207,4 +209,8 @@ Questions or issues: **support@adsuploader.com**
 
 ## License
 
-© Pingzu Digital LLC. All rights reserved. The hosted service and packages are proprietary; this repository contains connector documentation and configuration.
+The documentation, examples and connector configuration explicitly listed in [LICENSE](./LICENSE) are available under the MIT License. You can reuse and adapt those files while retaining the license and copyright notice. The `license` field in `plugin.json` refers only to this public connector package and the files covered by that license.
+
+**Ads Uploader remains proprietary.** The hosted product, application and backend source code, MCP server implementation, API/CLI implementation, and separately distributed npm packages (including `@adsuploader/mcp` and `@adsuploader/cli`) are outside this license. Linking to a package or service does not license its implementation. Service use remains subject to your subscription, permissions and [Terms of Service](https://adsuploader.com/terms-of-service).
+
+The `assets/` directory, logos, brand artwork and trademarks are excluded from the MIT license. All rights in excluded material are reserved by their respective owners. No right to imply affiliation or endorsement is granted.

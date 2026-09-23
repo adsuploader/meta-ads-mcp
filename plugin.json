@@ -10,6 +10,6 @@
   },
   "homepage": "https://adsuploader.com/docs/ad-configuration/mcp",
   "repository": "https://github.com/adsuploader/meta-ads-mcp",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": ["meta-ads", "facebook-ads", "instagram-ads", "marketing", "advertising", "bulk-upload", "mcp"]
 }

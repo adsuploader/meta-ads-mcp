@@ -1,0 +1,59 @@
+License scope
+=============
+
+The MIT License below applies only to the following documentation and
+connector-configuration files in the adsuploader/meta-ads-mcp repository,
+including code examples contained in these files:
+
+- README.md
+- SKILL.md
+- PRIVACY.md
+- SECURITY.md
+- docs/connect-grok.md
+- plugin.json
+- mcp.json
+- .mcp.json
+- server.json
+- glama.json
+
+These files describe and configure access to Ads Uploader. They do not contain
+the Ads Uploader product's implementation.
+
+This license does not apply to the Ads Uploader hosted service, website or
+application implementation, backend, MCP server implementation, API or CLI
+implementation, or separately distributed packages, including @adsuploader/mcp
+and @adsuploader/cli. References, links, installation commands and endpoint
+URLs in the licensed files do not bring those products or packages within
+this license. Their separate terms continue to apply.
+
+The assets/ directory, logos, brand artwork and trademarks are excluded. No
+trademark license or right to imply affiliation or endorsement is granted.
+All files not expressly listed above are excluded unless separately licensed.
+All rights in excluded material are reserved.
+
+Use of the hosted service requires the applicable account, subscription and
+permissions and remains subject to https://adsuploader.com/terms-of-service.
+This license does not grant service access or waive any fees.
+
+MIT License
+===========
+
+Copyright (c) 2026 Pingzu Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
