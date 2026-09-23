@@ -42,7 +42,7 @@ Founded on a decade of hands-on Meta advertising, Ads Uploader gives an agent th
 - **Partnership / branded content ads** — uploaded-media partnerships (Facebook + Instagram) and imported Instagram creator posts, with shared or per-ad/ad-set sponsors and header modes.
 - **Duplicate preserving social proof** — clone by post so likes, comments, and shares carry into new campaigns.
 - **Creative depth** — carousel, flexible, Multi-Media, Dynamic Optimization, creative enhancements, Advantage+ targeting, CTA and URL tagging.
-- **Human-in-the-loop by design** — validate-only previews, paused-by-default creation, and saved builds you finish in the web app.
+- **Human-in-the-loop by design** — validate-only previews and saved builds you finish in the web app.
 
 Built by a team that runs Meta ads at scale, and trusted by performance marketers and agencies managing serious Meta budgets.
 
@@ -161,7 +161,7 @@ Every tool carries a display title and read-only / destructive hints so your hos
 
 | Tool | What it does |
 | --- | --- |
-| `ads_create` | Create ads from a full AdSpec or saved build, incl. partnership ads — **paused by default** |
+| `ads_create` | Create ads from a full AdSpec or saved build, incl. partnership ads |
 | `ads_preview` | Resolve a spec, check Meta permissions and partnership sponsors, without creating anything |
 | `ads_duplicate_by_post` | Duplicate ads by Page post ID, preserving social proof |
 | `ads_duplicate_by_post_preview` | Preview a post-ID duplication |
