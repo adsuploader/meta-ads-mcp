@@ -7,7 +7,7 @@
 <p align="center">The <strong>Meta Ads MCP</strong> server by Ads Uploader helps you launch and manage Meta (Facebook &amp; Instagram) ads from Claude, ChatGPT, Cursor, and Codex.</p>
 
 <p align="center">
-  <a href="https://adsuploader.com"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
+  <a href="https://adsuploader.com/meta-ads-mcp"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
   <img alt="Model Context Protocol" src="https://img.shields.io/badge/Model_Context_Protocol-server-1a3a5c">
   <img alt="Meta Ads" src="https://img.shields.io/badge/Meta-Facebook_%26_Instagram-1a3a5c">
   <a href="https://github.com/adsuploader/meta-ads-mcp/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/adsuploader/meta-ads-mcp?style=flat&color=1a3a5c"></a>
@@ -197,8 +197,8 @@ Previews report the effective sponsors per ad and check partnership authorizatio
 
 ## Learn more
 
-- **Docs:** https://adsuploader.com/docs
-- **Website:** https://adsuploader.com
+- **Docs:** https://adsuploader.com/docs/ad-configuration/mcp
+- **Website:** https://adsuploader.com/meta-ads-mcp
 - **Security:** [SECURITY.md](./SECURITY.md) · **Privacy:** [PRIVACY.md](./PRIVACY.md)
 
 ## Support
