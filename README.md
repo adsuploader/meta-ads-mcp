@@ -2,12 +2,12 @@
   <img src="assets/meta-ads-mcp.png" alt="Meta Ads MCP by Ads Uploader" width="100%">
 </p>
 
-<h1 align="center">Ads Uploader — Meta Ads MCP</h1>
+<h1 align="center">Ads Uploader: Meta Ads MCP</h1>
 
-<p align="center">The <strong>Meta Ads MCP</strong> server by Ads Uploader helps you launch and manage Meta (Facebook &amp; Instagram) ads from Claude, ChatGPT, Cursor, and Codex.</p>
+<p align="center">The <strong>Meta Ads MCP</strong> server by Ads Uploader lets Claude, ChatGPT, Cursor and Codex analyze, edit and launch Meta (Facebook &amp; Instagram) ads, with an Agent Inbox for anything you want to approve first.</p>
 
 <p align="center">
-  <a href="https://adsuploader.com/meta-ads-mcp"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
+  <a href="https://adsuploader.com/mcp-meta-ads"><img alt="Website" src="https://img.shields.io/badge/website-adsuploader.com-1a3a5c"></a>
   <img alt="Model Context Protocol" src="https://img.shields.io/badge/Model_Context_Protocol-server-1a3a5c">
   <img alt="Meta Ads" src="https://img.shields.io/badge/Meta-Facebook_%26_Instagram-1a3a5c">
   <a href="https://github.com/adsuploader/meta-ads-mcp/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/adsuploader/meta-ads-mcp?style=flat&color=1a3a5c"></a>
@@ -15,9 +15,7 @@
 
 ---
 
-Ads Uploader takes an existing ad you already run, turns its settings into a reusable template, and builds brand-new ads on top of it — new media, copy, CTA, and targeting — in bulk. It also duplicates existing ads by post so social proof is preserved. Point your AI agent at it and describe the ads you want.
-
-> **Agent-assisted vs fully agentic.** For agent-assisted launches, we recommend having your agent assemble a **saved build** rather than creating ads headlessly — the build is accessible, editable, and launchable from the Ads Uploader web app, so you keep a human review-and-launch step in the polished UI.
+Connect your AI agent to Ads Uploader and it can read performance, change live campaigns and launch new ads in bulk, using the same launch engine as the Ads Uploader web app. You decide, per ad account, what the agent can do on its own and what waits in the **Agent Inbox** for a person to approve.
 
 Requires an existing paid Ads Uploader account with MCP access and a connected Meta account with the necessary permissions. MCP access is not included in trials.
 
@@ -25,26 +23,38 @@ This repository contains public documentation and connector configuration. Ads U
 
 ## What it does
 
-- **Build ads from a template** — copy settings from any existing ad, then swap in new media, text, CTA, links, and targeting.
-- **Bulk creation** — many ads across campaigns and ad sets in one job, with per-ad text and creative options.
-- **Duplicate by post** — clone existing ads by Page post ID so the original post's likes, comments, and shares carry into new campaigns.
-- **Partnership (branded content) ads** — run ads as a partnership with a creator or brand, from your own uploaded media or an imported Instagram post, with shared or per-ad/ad-set sponsors. *(See below.)*
-- **Media pipeline** — import creatives from public URLs, a Google Drive folder, or local files.
-- **Preview before launch** — resolve a spec, check Meta permissions, and see exactly what would be created.
-- **Multi-account** — list and work across every Meta ad account, Page, and connected Instagram account you have access to.
+- **Analyze.** Query Meta Ads Insights, check campaign health, read account status and spend, see Meta's change history, estimate audience size and delivery, and list audiences, conversions, library media and posts.
+- **Edit live campaigns.** Preview a change, then apply it: budgets, bids, status, ad set targeting and settings, ad creative text and links, and deletes. Every edit is logged, and your agent can undo reversible edits.
+- **Launch in bulk.** Copy the settings of an ad you already run, then build new ads on top of it with new media, copy, CTA, links and targeting, across many campaigns and ad sets in one job.
+- **Approve in the Agent Inbox.** On accounts set to Approval, launches, duplications and edits wait in the Agent Inbox with the current value, the new value and the agent's reason. Approve what you agree with, adjust the rest, or discard it.
+- **Duplicate.** Copy campaigns, ad sets or ads by ID, or duplicate ads by Page post ID so likes, comments and shares carry over.
+- **Every format the web app supports.** Single image and video, carousels, flexible ads, Multi Media ads, partnership ads and Product Showcase, with media from public URLs, a Google Drive folder or local files.
+- **History.** One log of every launch and edit, whether it came from the web app, the MCP or the CLI.
+
+## Agent permissions and the Agent Inbox
+
+Each ad account has its own agent settings in the Ads Uploader web app:
+
+| Setting | Options |
+| --- | --- |
+| Visible | Show or hide the account from agents |
+| Agent Read | Let agents read the account's data |
+| Agent Launch | Off, Approval or Allowed |
+| Agent Edit | Off, Approval or Allowed |
+
+With **Approval**, nothing reaches Meta until someone approves it in the Agent Inbox. With **Allowed**, the agent runs launches and edits end to end. Mix the two account by account, so scheduled agents can work overnight and leave their proposals for review in the morning.
 
 ## Why Ads Uploader
 
-Founded on a decade of hands-on Meta advertising, Ads Uploader gives an agent the **deepest, most complete Meta (Facebook &amp; Instagram) ad-creation workflows available** — everything needed to actually ship campaigns end to end:
+Built on a decade of hands-on Meta advertising, Ads Uploader gives an agent the Meta (Facebook &amp; Instagram) workflows media buyers already rely on:
 
-- **Template from any live ad** — copy a proven ad's exact settings, then rebuild on top with new media, copy, and targeting.
-- **Real bulk** — many ads across campaigns and ad sets in a single job, with per-ad and per-ad-set text.
-- **Partnership / branded content ads** — uploaded-media partnerships (Facebook + Instagram) and imported Instagram creator posts, with shared or per-ad/ad-set sponsors and header modes.
-- **Duplicate preserving social proof** — clone by post so likes, comments, and shares carry into new campaigns.
-- **Creative depth** — carousel, flexible, Multi-Media, Dynamic Optimization, creative enhancements, Advantage+ targeting, CTA and URL tagging.
-- **Human-in-the-loop by design** — validate-only previews and saved builds you finish in the web app.
+- **Template from any live ad.** Copy a proven ad's exact settings, then rebuild on top with new media, copy and targeting.
+- **Real bulk.** Many ads across campaigns and ad sets in a single job, with per-ad and per-ad-set text.
+- **The same engine as the web app.** Agents create exactly what the Ads Uploader uploader would, so a launch from Claude matches a launch from the UI.
+- **Control you choose.** Per-account permissions, the Agent Inbox, previews before anything is created, saved builds you can finish in the web app, and a full History.
+- **Partnership ads.** Uploaded-media partnerships on Facebook and Instagram, and imported Instagram creator posts, with shared or per-ad and per-ad-set sponsors.
 
-Built by a team that runs Meta ads at scale, and trusted by performance marketers and agencies managing serious Meta budgets.
+Built by a team that runs Meta ads at scale, and used by performance marketers and agencies managing serious Meta budgets.
 
 ## Install
 
@@ -119,54 +129,88 @@ ads login
 }
 ```
 
-The hosted server authenticates through OAuth in your browser — no token copying. The local package reads the credentials saved by `ads login`. Ask the agent to *list my ad accounts* to confirm the connection.
+The hosted server authenticates through OAuth in your browser, with no token copying. The local package reads the credentials saved by `ads login`. Ask the agent to *list my ad accounts* to confirm the connection.
 
 ## Tools
 
 Every tool carries a display title and read-only / destructive hints so your host can show the right guardrails.
 
-**Accounts &amp; discovery** (read-only)
+**Accounts and discovery** (read-only)
 
 | Tool | What it does |
 | --- | --- |
 | `ads_whoami` | Show which Ads Uploader user this session is authenticated as |
-| `ads_list_accounts` | List Meta ad accounts available to you |
-| `ads_list_campaigns` | List campaigns in an ad account (name/status filters) |
-| `ads_list_adsets` | List ad sets in a campaign |
-| `ads_list_ads` | List ads in an ad set |
-| `ads_get_ad` | Get one ad with its creative details |
-| `ads_list_pages` | List Facebook Pages and their connected Instagram accounts |
-| `ads_search_targeting` | Search Meta targeting values for a build |
+| `ads_list_accounts` / `ads_get_account` | List ad accounts, or read one account's status, currency, timezone, spend and funding |
+| `ads_list_campaigns` / `ads_list_adsets` / `ads_list_ads` | Browse campaigns, ad sets and ads |
+| `ads_get_ad` | One ad with its creative, post links and Meta's review reasons |
+| `ads_list_pages` / `ads_list_posts` | Facebook Pages, connected Instagram accounts and their posts |
+| `ads_list_audiences` / `ads_list_conversions` | Custom, lookalike and saved audiences; pixels and conversions |
+| `ads_list_library_media` | Images and videos in the ad account library |
+| `ads_search_targeting` | Search Meta targeting values |
 
-**Presets &amp; saved builds**
+**Analyze**
+
+| Tool | What it does |
+| --- | --- |
+| `ads_query_insights` / `ads_get_insights_job` | Query Meta Ads Insights, including async reports |
+| `ads_list_insight_fields` | Supported Insights fields and options |
+| `ads_campaign_health` | Campaign performance, results, budget, issues and learning status |
+| `ads_estimate_delivery` | Predicted audience size and delivery curve |
+| `ads_list_change_history` | Meta's activity log, including changes made in Ads Manager and other tools |
+
+**Edit**
+
+| Tool | What it does |
+| --- | --- |
+| `ads_edit_preview` | Preview budget, bid, status, targeting, settings, creative and delete changes |
+| `ads_edit_apply` | Apply a previewed edit, or send it to the Agent Inbox on accounts set to Approval |
+| `ads_edit_undo` | Undo a reversible edit |
+| `ads_edit_cancel` | Cancel an edit that hasn't run |
+| `ads_list_edits` / `ads_get_edit` | Browse edits and their results |
+
+**Agent Inbox and History**
+
+| Tool | What it does |
+| --- | --- |
+| `ads_list_edit_reviews` / `ads_get_edit_review` | Edits waiting for approval and their outcome |
+| `ads_get_launch` / `ads_discard_launch` | Check a launch, or discard one waiting in the Agent Inbox |
+| `ads_list_inbox_history` | What was approved, changed or discarded in the Agent Inbox |
+| `ads_list_history` | Every Ads Uploader launch and edit, from the web app, MCP and CLI |
+
+**Presets and saved builds**
 
 | Tool | What it does |
 | --- | --- |
 | `ads_list_presets` / `ads_get_preset` | Browse saved API and ad-text presets |
 | `ads_save_preset` | Save an existing ad as a reusable preset |
 | `ads_list_builds` / `ads_get_build` | Browse saved uploader builds |
-| `ads_save_build` / `ads_update_build` | Create or edit a durable saved build |
-| `ads_fork_build` | Fork a saved build into a new draft |
-| `ads_delete_build` | Delete a saved build |
+| `ads_save_build` / `ads_update_build` | Create or edit a saved build |
+| `ads_fork_build` / `ads_delete_build` | Fork or delete a saved build |
 
 **Media**
 
 | Tool | What it does |
 | --- | --- |
-| `ads_upload` | Upload media from URLs, a Google Drive folder, or disk |
-| `ads_upload_finalize` | Finalize a presigned upload batch |
-| `ads_list_uploads` / `ads_get_upload` | List batches or poll an ingest job |
+| `ads_upload` | Upload media from URLs, a Google Drive folder or disk |
+| `ads_upload_finalize` / `ads_upload_refresh_urls` | Finalize a presigned upload batch or refresh its upload URLs |
+| `ads_list_uploads` / `ads_get_upload` | List batches or poll an import |
 
-**Create &amp; duplicate**
+**Create and duplicate**
 
 | Tool | What it does |
 | --- | --- |
-| `ads_create` | Create ads from a full AdSpec or saved build, incl. partnership ads |
-| `ads_preview` | Resolve a spec, check Meta permissions and partnership sponsors, without creating anything |
-| `ads_duplicate_by_post` | Duplicate ads by Page post ID, preserving social proof |
-| `ads_duplicate_by_post_preview` | Preview a post-ID duplication |
-| `ads_get_job` / `ads_get_duplication` | Poll or resume a running job |
-| `ads_cancel_job` | Cancel a creation or ingest job |
+| `ads_preview` | Resolve a spec and check Meta permissions and partnership sponsors without creating anything |
+| `ads_create` | Create ads from a full spec or saved build, including partnership ads and Product Showcase |
+| `ads_duplicate_preview` / `ads_duplicate` | Copy campaigns, ad sets or ads by ID |
+| `ads_duplicate_by_post_preview` / `ads_duplicate_by_post` | Duplicate ads by Page post ID, keeping social proof |
+| `ads_list_catalogs` / `ads_list_product_sets` / `ads_get_product_showcase_recommendation` | Catalog products for Product Showcase |
+| `ads_get_job` / `ads_get_duplication` / `ads_cancel_job` | Poll, resume or cancel a running job |
+
+**Feedback**
+
+| Tool | What it does |
+| --- | --- |
+| `ads_report_issue` / `ads_request_feature` | Report a problem or ask for a missing capability |
 
 See [`SKILL.md`](./SKILL.md) for the full per-parameter reference agents should follow.
 
@@ -174,33 +218,35 @@ See [`SKILL.md`](./SKILL.md) for the full per-parameter reference agents should 
 
 `ads_create` and `ads_preview` support partnership ads two ways:
 
-- **Your own uploaded media**, as a partnership on Facebook or Instagram — choose a partner (the Second Identity) by Page and/or Instagram account, apply it across the whole launch or per ad / ad set, and pick the header mode (both identities, partner-only, or dynamic). An Instagram-only partner is supported.
-- **Import an existing Instagram creator post** by URL, shortcode, source ID, or ad code, and set the sponsor and text per ad, per ad set, or shared.
+- **Your own uploaded media**, as a partnership on Facebook or Instagram. Choose a partner (the Second Identity) by Page and/or Instagram account, apply it across the whole launch or per ad or ad set, and pick the header mode (both identities, partner-only, or dynamic). An Instagram-only partner is supported.
+- **Import an existing Instagram creator post** by URL, shortcode, source ID or ad code, and set the sponsor and text per ad, per ad set, or shared.
 
 Previews report the effective sponsors per ad and check partnership authorization for the First Identity *before* anything is created. Facebook post imports, mixed post/upload batches, and Threads on imported posts are not supported.
 
 ## Example prompts
 
-- *"Using any ad from my Sales ad set as the template, launch these 100 creatives — and write a unique headline and primary text for each."*
-- *"Take my best-performing sales ad and build 20 variations with different primary-text hooks, all paused in a new ad set."*
-- *"Assemble a saved build from these creatives and copy, then give me the link to review and launch it in the Ads Uploader web app."*
+- *"Which ad sets in my Sales campaign spent the most last week without a purchase? Pause them."*
+- *"Raise the daily budget by 20% on any ad set with a CPA under $30 over the last 7 days, and give me the reason for each change."*
+- *"Delete the old test campaigns in this account."* On an account set to Approval, this waits in the Agent Inbox until you approve it.
+- *"Using any ad from my Sales ad set as the template, launch these 100 creatives, with a unique headline and primary text for each."*
+- *"Upload the creatives in this Google Drive folder and build a new campaign with two ads per ad set."*
+- *"Copy my best campaign with a new name and a fresh budget, and keep the copy paused."*
 - *"Duplicate the ad behind this Facebook post into my Retargeting ad set so the likes and comments carry over."*
-- *"Import this Instagram creator post as a partnership ad with our brand as the sponsor, and preview the sponsors before creating."*
-- *"Upload the creatives in this Google Drive folder, then build ads from them in a new ad set with a unique hook per product."*
-- *"Preview what would be created from my saved build 'Q4 Prospecting' before anything goes live."*
-- *"Search interest targeting for 'home fitness' and add the top matches to my build."*
+- *"What changed in this account yesterday, in Ads Uploader and in Ads Manager?"*
 
 ## How it works
 
-- **Draft / preview first.** `ads_preview` resolves posts, media, and permissions using read and validate-only calls — it never creates ads or stores codes.
-- **Hand off to the web app.** Instead of launching headlessly, the agent can assemble a **saved build** and hand you a link — it hydrates in the Ads Uploader web uploader (an open tab picks it up automatically) so you review and launch from the full UI.
-- **Long jobs stay responsive.** The hosted server returns `still_running` with a `jobId` after ~60s so tool calls stay under proxy deadlines; resume with `ads_get_job`.
+- **Preview first.** `ads_preview` and `ads_edit_preview` resolve posts, media, permissions and the exact change using read and validate-only calls. They never create or change anything.
+- **Your permissions decide what runs.** On Approval, launches, duplications and edits go to the Agent Inbox and the agent gets a review link. On Allowed, they run straight away.
+- **Hand off to the web app.** The agent can assemble a **saved build** and give you a link. It opens in the Ads Uploader uploader so you can review and launch from the full UI.
+- **Long jobs stay responsive.** The hosted server returns `still_running` with a `jobId` after about 60 seconds so tool calls stay under proxy deadlines; resume with `ads_get_job`.
 - **OAuth, not tokens.** The hosted server authenticates with OAuth 2.1 (PKCE) in your browser.
 
 ## Learn more
 
-- **Docs:** https://adsuploader.com/docs/ad-configuration/mcp
-- **Website:** https://adsuploader.com/meta-ads-mcp
+- **Docs:** [MCP set-up](https://adsuploader.com/docs/automation/mcp) · [Edits and the Agent Inbox](https://adsuploader.com/docs/automation/edits) · [Insights](https://adsuploader.com/docs/automation/insights)
+- **Website:** [MCP for Meta Ads](https://adsuploader.com/mcp-meta-ads) · [Agent Inbox](https://adsuploader.com/mcp-meta-ads#agent-inbox)
+- **Walkthrough video:** [Meta Ads MCP with an Agent Inbox](https://www.youtube.com/watch?v=l3N-W4CUQtM)
 - **Security:** [SECURITY.md](./SECURITY.md) · **Privacy:** [PRIVACY.md](./PRIVACY.md)
 
 ## Support
